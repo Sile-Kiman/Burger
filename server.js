@@ -22,7 +22,7 @@ app.use(express.static('public'));
 // Data
  
 
- 
+
 // Serve index.handlebars to the root route.
 app.get("/", function(req, res) {
   connection.query("SELECT * FROM burgers;", function(err, data) {
