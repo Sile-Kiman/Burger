@@ -34,6 +34,14 @@
     padding: 0px 30px 10px;
   }
 
+  .hide{
+    display: none;
+  }
+  
+  .show{
+    display: block;
+  }
+
   button {
     background-color: white;
     padding: 10px;
@@ -44,6 +52,16 @@
     color: black;
     font-size: 1.5.em;
     text-align: center;
+  }
+
+  .eaten{
+    background-color: coral;
+    width: 30%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+
   }
   
   .col-sm-6 {

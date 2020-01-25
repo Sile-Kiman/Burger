@@ -9,7 +9,13 @@
   <ul>
   {{#each Order}}
   	<li>
-  	   <p>{{id}} {{burger_name}}</p>
+  	<p>{{id}} {{burger_name}}
+		 {{#if devoured}}
+     <button class="eaten" data-id="{{id}}">devour it</button> 
+     {{/if}}</button> 
+	</p>
+
+
  
   	</li>
   {{/each}}
