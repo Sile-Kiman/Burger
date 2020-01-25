@@ -1,0 +1,33 @@
+ 
+{{!-- <img class="b-img" src="../assets/images/burger.PNG"> --}}
+<br><br>
+<div class="mainContainer">
+
+  <h1>Eat Da Burger</h1>
+  <br>
+
+  <ul>
+  {{#each Order}}
+  	<li>
+  	   <p>{{id}} {{burger_name}}</p>
+ 
+  	</li>
+  {{/each}}
+</ul>
+
+  <form class="create-form">
+  {{!-- <form action="/" method="POST"></form> --}}
+
+    <div class="form-group">
+
+      <textarea type="text" id="id" name="burger_name"></textarea>
+    </div>
+
+
+    <button type="submit">Submit</button>
+
+    <h4>Add a burger you would like to eat and click submit button</h4>
+  </form>
+   
+  </div>
+ 
