@@ -8,6 +8,8 @@ var connection = require("./config/connection");
 
 // Create an instance of the express app.
 var app = express();
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
@@ -35,12 +37,11 @@ app.get("/", function(req, res) {
  
 
 // Post route -> back to home
-app.post("/", (req, res)=>{
-    connection.query("INSERT INTO  burgers (burger_name, devoured) VALUE ? ?", 
-[{
-  burger_name: req.body.burger_name,
-  devoured: true
-}], 
+app.post("/", function(req, res){
+  console.log("posting now...");
+  console.log(req.body);
+    connection.query("INSERT INTO burgers (burger_name, devoured) VALUES (?, ?)", 
+[req.body.burgername, true], 
 function(err, result) { 
   console.log("hello")
   if (err) {

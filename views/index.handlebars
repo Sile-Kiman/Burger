@@ -1,39 +1,39 @@
- 
 {{!-- <img class="b-img" src="../assets/images/burger.PNG"> --}}
 <br><br>
 <div class="mainContainer">
 
   <h1>Eat Da Burger</h1>
   <br>
-
-  <ul>
-  {{#each Order}}
-  	<li>
-  	<p>{{id}} {{burger_name}}
-		 {{#if devoured}}
-     <button class="eaten" data-id="{{id}}">devour it</button> 
-     {{/if}}</button> 
-	</p>
-
-
- 
-  	</li>
-  {{/each}}
-</ul>
-
-  <form class="create-form">
-  {{!-- <form action="/" method="POST"></form> --}}
+  <form class="create-form" action="/" method="POST">
 
     <div class="form-group">
 
-      <textarea type="text" id="id" name="burger_name"></textarea>
+      <div class="container_one col-6">
+
+        {{#each Order}}
+
+        {{#if devoured}}
+        <p>{{id}} {{burger_name}}
+          <button class="eaten" data-id="{{id}}">devour it</button>
+        </p>
+        {{/if}}
+        {{/each}}
+      </div>
+
+      <div class="container_two col-6">
+        <h5>These burgers have been eaten</h5>
+        {{#each Order}}
+        {{#unless devoured}}
+          <p>{{id}} {{burger_name}}
+          </p>
+        {{/unless}}
+        {{/each}}
+      </div>
+      <textarea type="text" id="id" name="burgername"></textarea>
     </div>
-
-
     <button type="submit">Submit</button>
 
     <h4>Add a burger you would like to eat and click submit button</h4>
   </form>
-   
-  </div>
- 
+
+</div>
