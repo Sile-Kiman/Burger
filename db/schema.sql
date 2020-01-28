@@ -6,6 +6,6 @@ USE   Burgers_db;
 CREATE TABLE burgers(
   id INT  NOT NULL AUTO_INCREMENT, -- Primary Key
   burger_name VARCHAR(50) NOT NULL, -- hold burgers name
-  devoured BOOLEAN NOT NULL, -- to verify if burger has been eaten
+  devour_it BOOLEAN NOT NULL, -- to verify if burger has been eaten
   PRIMARY KEY (id)
 );
