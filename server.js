@@ -6,6 +6,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 var connection = require("./config/connection");
 
+//var burger = require("../models/burg.js");
 // Create an instance of the express app.
 var app = express();
 app.use(express.urlencoded({extended: true}));
@@ -38,11 +39,10 @@ app.get("/", function(req, res) {
 
 // Post route -> back to home
 app.post("/", function(req, res){
-  console.log("posting now...");
-  console.log(req.body);
-    connection.query("INSERT INTO burgers (burger_name, devoured) VALUES (?, ?)", 
-[req.body.burgername, true], 
-function(err, result) { 
+   
+    connection.query("INSERT INTO burgers (burger_name, devour_it) VALUES (?, ?)", 
+    [req.body.burgername, true], 
+  function(err, result) { 
   console.log("hello")
   if (err) {
     return res.status(500).end();
@@ -51,6 +51,22 @@ function(err, result) {
   res.redirect("/");
   res.end();
  
+  });
+});
+
+app.put("/:id", function(req, res) {
+  connection.query("UPDATE burgers SET devour_it = ? WHERE id = ?", [false, req.params.id], function(err, result) {
+    console.log("llll", req.params.id)
+    if (err) {
+      // If an error occurred, send a generic server failure
+      return res.status(500).end();
+    }
+    else if (result.changedRows === 0) {
+      // If no rows were changed, then the ID must not exist, so 404
+      return res.status(404).end();
+    }
+    res.status(200).end();
+
   });
 });
 
