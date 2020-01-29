@@ -7,5 +7,5 @@ CREATE TABLE burgers(
   id INT  NOT NULL AUTO_INCREMENT, -- Primary Key
   burger_name VARCHAR(50) NOT NULL, -- hold burgers name
   devour_it BOOLEAN NOT NULL, -- to verify if burger has been eaten
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
 );
