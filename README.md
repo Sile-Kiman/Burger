@@ -37,6 +37,8 @@ Test:
 3-Verify all the pages that were supposed to display are there. 
 
 ![Image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/home.PNG)
+![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/newOeder.PNG)
+![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/devour_it.PNG)
  
 
 License:
