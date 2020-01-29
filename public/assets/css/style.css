@@ -54,20 +54,24 @@
     border-radius: 5px;
     color: black;
     text-align: center;
-
   }
   
-  .col-sm-6 {
-  float: left;
-  width: 50%;
-}
+  .remove{
+    background-color: greenyellow;
+    border: none;
+    cursor: pointer;
+    
+  }
+  #clear{
+    background-color: coral;
+    width: 30%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+  }
+   
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
   @media screen and (max-width: 600px) {
   .col-sm-6 {
