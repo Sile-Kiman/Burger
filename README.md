@@ -36,8 +36,7 @@ Test:
 2- Check the other spec such as when you clicks on each button the appropriate actions are performed. 
 3-Verify all the pages that were supposed to display are there. 
 
-[Image] of the Site:
-<img scr="/assets/Capture.PNG">
+![Image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/home.PNG)
  
 
 License:
