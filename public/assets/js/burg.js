@@ -3,14 +3,14 @@ $(function() {
     $(".eaten").on("click", function(event) {
      // var newburger = false; 
       var id = $(this).data("id");
-      var devour_it = $(this).data("newburger");
+      //var devour_it = $(this).data("newburger");
 
       var neweatState = {
         devour_it: false,
       };
 
       // Send the PUT request.
-      $.ajax("/" + id, {
+      $.ajax("/api/burger" + id, {
         type: "PUT",
         data: neweatState
       }).then(
@@ -27,12 +27,12 @@ $(function() {
         event.preventDefault();
     
         var newBurger = {
-          name: $("#burgername").val().trim(),
+          burger_name: $("#burgerValue").val().trim(),
           devour_it: true,
         };
     
         // Send the POST request.
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burger", {
           type: "POST",
           data: newBurger
         }).then(
@@ -43,6 +43,10 @@ $(function() {
           }
         );
       });
+
+     
+    });
     
- });
+    
+ //});
 
