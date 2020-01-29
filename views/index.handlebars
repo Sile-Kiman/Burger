@@ -1,41 +1,43 @@
-{{!-- <img class="b-img" src="../assets/images/burger.PNG"> --}}
 <br><br>
 <div class="mainContainer">
 
   <h1>Eat Da Burger</h1>
   <br>
-<div class="row">
-  <div class="col-6">
+  <div class="row">
+    <div class="col-6">
 
-    {{#each burger_name}}
+      {{#each burger_name}}
 
-    {{#if devour_it}}
-    <h5>{{id}} {{burger_name}}
-      <button class="eaten" data-id="{{id}}">devour it</button>
-    </h5>
-    {{/if}}
-    {{/each}}
-  </div>
+      {{#if devour_it}}
+      <h5>{{id}} {{burger_name}}
+        <button class="eaten" data-id="{{id}}">devour it</button>
+      </h5>
+      {{/if}}
+      {{/each}}
+    </div>
 
-  <div class="col-6">
-     
-    {{#each burger_name}}
+    <div class="col-6 container2">
+
+      {{#each burger_name}}
+      {{#unless devour_it}}
+      <h5>{{id}} {{burger_name}}
+        <button <i data-id="{{id}}" class='fas fa-trash-alt text-danger delete-burger remove'></button>
+      </h5>
+      {{/unless}}
+      {{/each}}
+
+      {{!-- 
     {{#unless devour_it}}
-    <h5>{{id}} {{burger_name}}
-    </h5>
-    
-    {{/unless}}
-    {{/each}}
+    <button id="clear" data-id="{{id}}">Clear</button>
+    {{/unless}} --}}
+    </div>
   </div>
-</div>
-   
 
   <form class="create-form" action="/" method="POST">
 
     <div class="form-group">
 
-
-      <textarea type="text" id="burgerValue" name="burgername"></textarea>
+    <textarea type="text" id="burgerValue" name="burgername"></textarea>
     </div>
     <button type="submit" id="newBur">Submit</button>
 
