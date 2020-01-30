@@ -38,7 +38,7 @@ Test:
 
 ![Image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/home.PNG)
 ![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/newOeder.PNG)
-![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/devour_it.PNG)
+![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/devoured.PNG)
  
 
 License:
