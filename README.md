@@ -1,27 +1,26 @@
 # Burger
 Usage/Description:
-This assignement  is to allow user to place a burger order.  User should be able to enter the name of the buger they want to order and click submit.  
+This assignment  is to allow user to place a burger order.  User should be able to enter the name of the burger they want to order and click submit.  
 
-How does this work:
-1- When  you lands on the page, they are presented with a page with a field to enter a burger name.
-
-2- As user enters the burger burger name and click submit it should display on the left hand side along with a devout it button   
-
-3- The  buger should move to the right side as soon as user clicks the devour button. 
-4- All the data should be saved in  the database. 
+How does this work: 
+1- When you lands on the page, they are presented with a page with a field to enter a burger name.
+2- As user enters the burger   name and click submit it should display on the left hand side along with a devout it button
+3- The burger should move to the right side as soon as user clicks the devour button. 
+4- All the data should be saved in the database.
+Tool used to build my portfolio site. 1- Handlebars 2- CSS 3- Bootstrap 3- JavaScript 4- jQuery 5- Node JS 6- MySQL
 
  
 Tool used to build my portfolio site.
-1-	Handlebars
-2-	CSS 
-3-  Bootstrap
-3-	JavaScript 
-4-  JQuery 
-5- Node JS 
-6- Mysql
+1-Handlebars
+2-CSS 
+3-Bootstrap
+3-JavaScript 
+4-jQuery 
+5-Node JS 
+6-MySQL
 
 Credit:
-I used the following sites for my  research  during this assignment:
+I used the following sites for my research during this assignment:
 1-google.com
 2- https://www.w3schools.com/, stackoverflow.com, bootstrap.com, class recording., NPM     
 3-Classmates
@@ -32,9 +31,10 @@ https://sile-kiman.github.io/Burger/.
 
 
 Test:
-1 -Verify the page’s  look and feel matches the wireframe provided for this assignment- (this maybe slightly different) 
-2- Check the other spec such as when you clicks on each button the appropriate actions are performed. 
-3-Verify all the pages that were supposed to display are there. 
+1 -Verify the page’s look and feel matches the wireframe provided for this assignment- (this maybe slightly different) 
+2- Check the other spec such as when you click on each button the appropriate actions are performed. 
+3-Verify all the pages that were supposed to display are there.
+
 
 ![Image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/home.PNG)
 ![image](https://github.com/Sile-Kiman/Burger/blob/master/public/assets/images/newOeder.PNG)
