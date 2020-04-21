@@ -10,7 +10,7 @@ How does this work:
 Tool used to build my portfolio site. 1- Handlebars 2- CSS 3- Bootstrap 3- JavaScript 4- jQuery 5- Node JS 6- MySQL
 
  
-Tool used to build my portfolio site.
+Tool used to build this site.
 1-Handlebars
 2-CSS 
 3-Bootstrap
